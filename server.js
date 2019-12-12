@@ -10,7 +10,7 @@ const app=express();
 const connMysql = mysql.createConnection({
     host: 'remotemysql.com',
     user: '2xlWAvJ2Sv',
-    password: 'pFrtSrdLZy',
+    password: '7NR6ZQhCzw',
     database: '2xlWAvJ2Sv'
 });
 
