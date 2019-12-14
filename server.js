@@ -20,6 +20,6 @@ connMysql.connect(err => {
 
 require('./routes/staffRouter')(app, connMysql);
 
-app.listen(PORT, () => {
+app.listen(PORT,() => {
     console.log(`App is running on port ${PORT}`);
 });
