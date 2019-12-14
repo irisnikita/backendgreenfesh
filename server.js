@@ -8,10 +8,10 @@ const app=express();
 
 //connect to database
 const connMysql = mysql.createConnection({
-    host: 'remotemysql.com',
-    user: '2xlWAvJ2Sv',
-    password: '4Kb66IhUh6',
-    database: '2xlWAvJ2Sv'
+    host: '35.225.6.209',
+    user: 'truongvi1999',
+    password: 'tjmwjm824594',
+    database: 'greenfeshdata'
 });
 
 connMysql.connect(err=>{
