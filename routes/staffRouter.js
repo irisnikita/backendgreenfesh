@@ -20,5 +20,19 @@ module.exports = function(app,connMysql){
             res.send(data)
         })
     })
+
+    //ChangeImage
+    app.put('/listStaff/changeImage/:id',(req,res) => {
+        const image = req.body;
+        let query = `UPDATE staffs SET img = ? WHERE id= ?`;
+        connMysql.query(query,[image.img,parseInt(req.params.id)],(err,data) => {
+            if(err){
+                res.send(err)
+            }
+            else{
+                res.send(data)
+            }
+        })
+    })
     
 }
