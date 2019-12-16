@@ -4,7 +4,6 @@ const app = express();
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const multer = require('multer');
-const uploadImage = require('./helpers/helpers')
 const cors = require('cors');
 
 const PORT = process.env.PORT || 6789;
